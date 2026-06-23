@@ -19,6 +19,7 @@ Deze applicatie:
 
 ### Stap 1 – Downloaden
 Download de volledige `quickscan` map en pak deze uit.
+Zorg dat je ook een `.env` bestand aanmaakt (zie Configuratie).
 
 ### Stap 2 – Starten
 Dubbelklik op:
@@ -85,15 +86,33 @@ Dit opent log.txt met details van de verwerking (handig bij fouten)
 
 De tool gebruikt een `.env` bestand met API-configuratie.
 
-Dit bestand zit al in de map en hoeft niet aangepast te worden.
+### 🔹 Stap 1 – `.env` aanmaken
+
+In de map staat een bestand:
+
+env_template.txt
+
+Kopieer dit bestand en hernoem het naar:
+
+.env
+
+### 🔹 Stap 2 – gegevens invullen
+
+Open `.env` en vul de benodigde gegevens in:
+
+WSKEY=
+WSKEY_SECRET=
+INSTITUTION_SYMBOL=
+
+Deze gegevens zijn nodig om verbinding te maken met de WorldCat API.
 
 ---
 
 ## 🔐 Belangrijk
 
-- De tool gebruikt een gedeelde WorldCat API key
-- Alleen bedoeld voor intern gebruik binnen het team
-- Niet extern delen
+- De `.env` bevat gevoelige gegevens (API keys)
+- Dit bestand wordt **niet gedeeld via GitHub**
+- Deel deze gegevens nooit extern
 
 ---
 
